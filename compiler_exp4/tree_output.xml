@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ParserTree name="tree_output.xml" />
+<TreeRoot>
+    <declaration>
+        <type-specifier />
+        <identifier />
+        <= />
+        <primary-expression>
+            <constant />
+        </primary-expression>
+        <; />
+    </declaration>
+    <program'>
+        <program>
+            <declaration>
+                <type-specifier />
+                <identifier />
+                <= />
+                <primary-expression>
+                    <constant />
+                </primary-expression>
+                <; />
+            </declaration>
+            <program'>
+                <program>
+                    <statement>
+                        <iteration-statement>
+                            <while />
+                            <( />
+                            <assignment-expression>
+                                <primary-expression>
+                                    <constant />
+                                </primary-expression>
+                                <assignment-expression' />
+                            </assignment-expression>
+                            <) />
+                            <statement>
+                                <expression-statement>
+                                    <assignment-expression>
+                                        <primary-expression>
+                                            <identifier />
+                                        </primary-expression>
+                                        <assignment-expression'>
+                                            <= />
+                                            <assignment-expression>
+                                                <primary-expression>
+                                                    <identifier />
+                                                </primary-expression>
+                                                <assignment-expression' />
+                                            </assignment-expression>
+                                        </assignment-expression'>
+                                    </assignment-expression>
+                                    <; />
+                                </expression-statement>
+                            </statement>
+                        </iteration-statement>
+                    </statement>
+                    <program' />
+                </program>
+            </program'>
+        </program>
+    </program'>
+</TreeRoot>

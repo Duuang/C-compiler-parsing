@@ -1,0 +1,15 @@
+S: program
+Vn: program program' statement expression-statement selection-statement selection-statement'
+Vn: iteration-statement primary-expression assignment-expression assignment-expression' declaration
+Vt: /e ; if ( ) else while identifier constant = type-specifier
+program -> statement program' | declaration program' | /e
+program' -> /e | program
+statement -> expression-statement | selection-statement | iteration-statement
+expression-statement -> assignment-expression ;
+selection-statement -> if ( assignment-expression ) statement selection-statement'
+selection-statement' -> /e | else statement
+iteration-statement -> while ( assignment-expression ) statement
+primary-expression -> identifier | constant
+assignment-expression -> primary-expression assignment-expression'
+assignment-expression' -> /e | = assignment-expression
+declaration -> type-specifier identifier = primary-expression ;
